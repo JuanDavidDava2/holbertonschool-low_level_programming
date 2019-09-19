@@ -1,22 +1,28 @@
 #include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include < time.h >
+#include < stdio.h >
 /**
- * main- Generate a random number
- * Return: Always 0 (success)
- */
-
-int main(void)
+* checkNumber - Check if a number is positive, negative or zero
+* @number: The int variable to check
+*/
+void checkNumber(int number)
 {
-int n;
-
-srand(time(0));
-n = rand() - RAND_MAX / 2;
 if (number > 0)
-rintf("%d is positive\n", number);
+printf("%d is positive\n", number);
 else if (number == 0)
 printf("%d is zero\n", number);
 else
 printf("%d is negative\n", number);
+}
+/**
+* main - Generate a random number
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+	int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+checkNumber(n);
 return (0);
 }

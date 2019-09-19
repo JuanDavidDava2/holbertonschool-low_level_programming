@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <studio.h>
+#include <stdio.h>
 
 /**
  * numberCheck - Check if a number is positive, negative or zero
@@ -9,7 +9,7 @@
 void numberCheck(int number)
 {
 	if (number > 0)
-		prinf("%d is possitive\n", number);
+		printf("%d is possitive\n", number);
 	else if (number == 0)
 		printf("%d is zero\n", number);
 	else
@@ -25,6 +25,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	numberCheck(n)
+	numberCheck(n);
 	return (0);
 }

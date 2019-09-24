@@ -2,14 +2,12 @@
 
 /**
  * _abs - computes the absolute value of an integer.
- * @n: is
- * Return: balbla
+ * @n: take a int
+ * Return: abs
  */
 int _abs(int n)
 {
 	if (n < 0)
-	{
-		_putchar(n * -1);
-	}
+		return (n * -1);
 	return (n);
 }

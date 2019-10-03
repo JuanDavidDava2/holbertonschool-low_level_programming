@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * *_strcat - concatenates two strings.
  * @dest: takes pointer
@@ -10,11 +9,15 @@ char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		;
+	j = 0;
 
-	for (j = 0; (dest[i] = src[j]) != '\0'; i++, j++)
-		;
+	while (dest[j] != '\0')
+		j++;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[j + i] = src[i];
+
+	dest[j + i] = '\0';
 
 	return (dest);
 }

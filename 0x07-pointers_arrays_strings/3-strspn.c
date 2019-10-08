@@ -6,8 +6,8 @@
  * @accept: takes a pointer
  * Return: return
  */
-unsigned int _strspn(char *s, char *accept)
-{
+uns    igned int _strspn(char *s, char *accept)
+    {
 	int a, b;
 
 	for (a = 0; s[a] != '\0'; a++)

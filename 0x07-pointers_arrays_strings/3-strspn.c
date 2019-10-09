@@ -4,10 +4,10 @@
  * _strspn - gets the length of a prefix substring.
  * @s: takes a pointer
  * @accept: takes a pointer
- * Return: return
+ * Return: retur
  */
-uns    igned int _strspn(char *s, char *accept)
-    {
+unsigned int _strspn(char *s, char *accept)
+{
 	int a, b;
 
 	for (a = 0; s[a] != '\0'; a++)
@@ -15,8 +15,10 @@ uns    igned int _strspn(char *s, char *accept)
 		for (b = 0; accept[b] != '\0'; b++)
 		{
 			if (s[a] == accept[b])
-				return (s + a);
+				break;
 		}
+		if (accept[b] != s[a])
+			break;
 	}
-	return (NULL);
+	return (a);
 }

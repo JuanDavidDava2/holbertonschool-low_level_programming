@@ -1,11 +1,10 @@
 #include"holberton.h"
 #include<stdlib.h>
 /**
- *
- *
- *
- *
- *
+ * str_concat - concatena
+ * @s1: takes pointer
+ * @s2: takes pointer
+ * Return: none
  */
 char *str_concat(char *s1, char *s2)
 {

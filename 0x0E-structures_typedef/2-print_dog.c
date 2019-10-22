@@ -1,10 +1,8 @@
 #include "dog.h"
 #include<stdio.h>
-#include<stdlib.h>
 /**
  * print_dog - Write a function that prints a struct dog
  * @d: takes pointer
- * Return: none
  */
 void print_dog(struct dog *d)
 {

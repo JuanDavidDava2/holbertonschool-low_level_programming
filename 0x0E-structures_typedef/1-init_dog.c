@@ -1,4 +1,6 @@
 #include "dog.h"
+#include<stdio.h>
+#include<stdlib.h>
 /**
  * init_dog -  name, age, owner.
  * @d: the struct of the dog.

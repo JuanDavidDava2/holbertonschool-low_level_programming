@@ -1,7 +1,5 @@
 #ifndef dogh
 #define dogh
-#endif
-
 struct dog
 {
 	char *name;
@@ -10,3 +8,4 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+#endif

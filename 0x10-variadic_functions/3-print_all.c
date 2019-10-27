@@ -1,7 +1,4 @@
 #include"variadic_functions.h"
-#include<stdlib.h>
-#include<stdio.h>
-#include<stdarg.h>
 /**
  * prn_char - print char
  * @ch: takes char..

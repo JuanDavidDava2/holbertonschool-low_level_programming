@@ -6,7 +6,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	int count = 0;
 	unsigned int leng;
 	char *sstr;
 
@@ -16,14 +16,14 @@ size_t print_list(const list_t *h)
 	{
 		leng = h->len;
 		sstr = h->str;
-		if (sstr == NULL)
+		if (h->str == NULL)
 		{
 			leng = 0;
 			sstr = "(nil)";
 		}
 		printf("[%d] %s\n", leng, sstr);
-		h = h->next;
 		count++;
+		h = h->next;
 	}
 	return (count);
 }

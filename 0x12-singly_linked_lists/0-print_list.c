@@ -1,4 +1,4 @@
-#include "lists.h"
+#include"lists.h"
 /**
  * print_list - print list
  * @h: have a list in list_t
@@ -6,11 +6,24 @@
  */
 size_t print_list(const list_t *h)
 {
-	if (!h)
+	size_t count = 0;
+	unsigned int leng;
+	char *sstr;
+
+	if (h == NULL)
 		return (0);
-	if (!(h->str))
-		printf("[0] (nil)\n");
-	else
-		printf("[%i] %s\n", h->len, h->str);
-	return (print_list(h->next) + 1);
+	while (h != NULL)
+	{
+		leng = h->len;
+		sstr = h->str;
+		if (sstr == NULL)
+		{
+			leng = 0;
+			sstr = "(nil)";
+		}
+		printf("[%d] %s\n", leng, sstr);
+		h = h->next;
+		count++;
+	}
+	return (count);
 }

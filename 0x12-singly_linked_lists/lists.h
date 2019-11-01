@@ -1,5 +1,5 @@
-#ifndef list
-#define list
+#ifndef LIST_FILE
+#define LIST_FILE
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>

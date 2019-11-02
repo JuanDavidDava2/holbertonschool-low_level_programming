@@ -1,8 +1,9 @@
 #include"lists.h"
 /**
- * list_len - print the number of elements
- * @h: have a list in list_t
- * Return: nodes number
+ * add_node - add new node.
+ * @head: have a list.
+ * @str: take a string.
+ * Return: list.
  */
 list_t *add_node(list_t **head, const char *str)
 {

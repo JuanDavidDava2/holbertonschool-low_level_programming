@@ -3,12 +3,14 @@
  * free_listint - free memory of list
  * @head: list
  */
-void free_listint(listint_t *head);
+void free_listint(listint_t *head)
 {
-	if (head)
+	listint_t *n;
+
+	while (head)
 	{
-		free(head->next);
-		free(head->str);
-		free(head);
+		n = head;
+		head = head->next;
+		free(n);
 	}
 }

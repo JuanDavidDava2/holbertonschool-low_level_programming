@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/**
+ * main - print numbers
+ * Return: (0)
+ */
 int main(void)
 {
 	int p, s, t;

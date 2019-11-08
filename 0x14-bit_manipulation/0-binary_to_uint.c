@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num = 0;
 
 	if (b == NULL)
-		return (-1);
+		return (0);
 	while (b[s] != '\0')
 	{
 		if (b[s] == '1' || b[s] == '0')

@@ -1,6 +1,10 @@
 #include "holberton.h"
-
-
+/**
+ * read_textfile - reads a text file and prints.
+ * @filename: size pointer
+ * @letters: index
+ * Return: index
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file;

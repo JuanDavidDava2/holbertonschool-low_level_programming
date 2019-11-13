@@ -6,14 +6,15 @@
  */
 int _strlen(char *s)
 {
-	int i;
+	int count;
 
-	if (s)
-		return (0);
-
-	for (i = 0; s[i]; i++)
-		;
-	return (i);
+	count = 0;
+	while (*s != 0)
+	{
+		count++;
+		s++;
+	}
+	return (count);
 }
 /**
  * create_file - creates a file

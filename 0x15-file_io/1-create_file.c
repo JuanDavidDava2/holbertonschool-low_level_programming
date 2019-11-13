@@ -1,22 +1,5 @@
 #include "holberton.h"
 /**
- * _strlen - length string
- * @s: string
- * Return: int string
- */
-int _strlen(char *s)
-{
-	int count;
-
-	count = 0;
-	while (*s != 0)
-	{
-		count++;
-		s++;
-	}
-	return (count);
-}
-/**
  * create_file - creates a file
  * @filename: name of file
  * @text_content: content to put in file
@@ -31,9 +14,9 @@ int create_file(const char *filename, char *text_content)
 	fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 	if (fd == -1)
 		return (0);
-	len = _strlen(text_content);
-	if (write(fd, text_content, len) != len)
-		return (-1);
+	for (len = 0; text_content[len] < '\0'; len++)
+		;
+	fd = write(fd, text_content, len);
 	close(fd);
 	return (1);
 

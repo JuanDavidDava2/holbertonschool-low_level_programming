@@ -26,8 +26,8 @@ Use system calls only when you need to
 ### Authorized functions and macros
 
 - **``access``** (man 2 access)
-- **``chdir```** (man 2 chdir)
-- **``close```** (man 2 close)
+- **``chdir``** (man 2 chdir)
+- **``close``** (man 2 close)
 - **``closedir``** (man 3 closedir)
 - **``execve``** (man 2 execve)
 - **``exit``** (man 3 exit)
@@ -37,7 +37,7 @@ Use system calls only when you need to
 - **``free``** (man 3 free)
 - **``getcwd``** (man 3 getcwd)
 - **``getline``** (man 3 getline)
-- **``isatty```** (man 3 isatty)
+- **``isatty``** (man 3 isatty)
 - **``kill``** (man 2 kill)
 - **``malloc``** (man 3 malloc)
 - **``open``** (man 2 open)

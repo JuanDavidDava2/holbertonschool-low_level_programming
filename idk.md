@@ -25,7 +25,7 @@ Use system calls only when you need to
 
 ### Authorized functions and macros
 
-```
+
 **``access``** (man 2 access)
 **``chdir```** (man 2 chdir)
 **``close```** (man 2 close)
@@ -56,7 +56,7 @@ Use system calls only when you need to
 **``wait3``** (man 2 wait3)
 **``wait4``** (man 2 wait4)
 **``write``** (man 2 write)
-```
+
 
 ## Compilation
 

@@ -9,7 +9,7 @@
 | _strdup.c | creates a duplicate of a string | |
 | append.c | appends user input to path environment directory | |
 | built-in.c | chops newline and executes exit and env built-in functionality | |
-|----------|--------------------------------------------------------------| |
+|----------|--------------------------------------------------------------|-----------------------------------|
 |----------|--------------------------------------------------------------| |
 |----------|--------------------------------------------------------------| |
 | fork_execute.c | fork a child and execute the command | |

@@ -1,5 +1,5 @@
 ## File Descriptions
-| Filename | Description | otracosa |
+| Filename | Description |
 | ------------- |:-------------:|
 | main.c | entry point source file |
 |           |                                             |

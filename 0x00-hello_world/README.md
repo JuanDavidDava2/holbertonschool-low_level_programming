@@ -1,6 +1,6 @@
 ## File Descriptions
 | Filename | Description | otracosa |
-| ------------- | ------------- |:------------:|
+| ------------- | ------------- | ------------ | 
 | main.c | entry point source file | fdfsd|
 |           |                                             | |
 | _getenv.c | searches the environment for a given string | |
